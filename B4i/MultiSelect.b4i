@@ -1,26 +1,44 @@
-﻿Build1=Default,b4i.example
-File1=MainPage.bil
+﻿Build1=Default,b4i.miniorm
+File1=CategoryItem.bil
+File2=MainPage.bil
+File3=ProductItem.bil
+File4=template_category.json
+File5=template_product.json
 FileGroup1=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
 Group=Default Group
-Library1=icore
-Library2=b4xpages
+Library1=b4xpages
+Library2=b4xpreferencesdialog
+Library3=icore
+Library4=xui views
+Library5=miniormutils
 Module1=|relative|..\B4XMainPage
-NumberOfFiles=1
-NumberOfLibraries=2
+NumberOfFiles=5
+NumberOfLibraries=5
 NumberOfModules=1
 Version=8.51
 @EndOfDesignText@
 'Code module
 #Region  Project Attributes 
-	#ApplicationLabel: B4i Example
-	#Version: 1.0.0 
+	#ApplicationLabel: MiniORM
+	#Version: 1.06
 	'Orientation possible values: Portrait, LandscapeLeft, LandscapeRight and PortraitUpsideDown
 	#iPhoneOrientations: Portrait, LandscapeLeft, LandscapeRight
 	#iPadOrientations: Portrait, LandscapeLeft, LandscapeRight, PortraitUpsideDown
 	#Target: iPhone, iPad
 	#ATSEnabled: True
-	#MinVersion: 11
+	#MinVersion: 13
 #End Region
+#if RELEASE
+	#CertificateFile: ios_distribution.cer
+	#ProvisionFile: Distribution.mobileprovision
+#Else
+	#CertificateFile: ios_development.cer
+	#ProvisionFile: Development.mobileprovision
+#End If
 
 Sub Process_Globals
 	Public App As Application

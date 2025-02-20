@@ -1,21 +1,37 @@
 ﻿AppType=JavaFX
-Build1=Default,b4j.example
-File1=MainPage.bjl
-FileGroup1=New Group
+Build1=Default,b4j.miniorm
+File1=CategoryItem.bjl
+File2=icon.png
+File3=MainPage.bjl
+File4=ProductItem.bjl
+File5=template_category.json
+File6=template_product.json
+FileGroup1=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
 Group=Default Group
-Library1=jcore
-Library2=jfx
-Library3=b4xpages
+Library1=b4xpages
+Library2=b4xpreferencesdialog
+Library3=jcore
+Library4=jfx
+Library5=miniormutils
+Library6=xui views
 Module1=|relative|..\B4XMainPage
-NumberOfFiles=1
-NumberOfLibraries=3
+NumberOfFiles=6
+NumberOfLibraries=6
 NumberOfModules=1
 Version=10
 @EndOfDesignText@
+' Version 1.06
 #Region Project Attributes 
 	#MainFormWidth: 600
 	#MainFormHeight: 600 
 #End Region
+#AdditionalJar: sqlite-jdbc-3.7.2
+'#AdditionalJar: mysql-connector-java-8.0.30
 
 Sub Process_Globals
 	Private fx As JFX
